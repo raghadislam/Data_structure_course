@@ -1,0 +1,8 @@
+# ninja log v5
+3	281	7115096647121559	CMakeFiles/global_.dir/queue/queue.c.obj	99cdaad3ea4b36e0
+15	301	7115096647301148	CMakeFiles/global_.dir/main.c.obj	cc73cdbf8814cbb6
+9	292	7115096647161460	CMakeFiles/global_.dir/stack/stack.c.obj	57fae673ca0d39d9
+30	307	7115096647440694	CMakeFiles/global_.dir/list/list.c.obj	2022fe60cf3dd23b
+308	443	7115096648757167	global_.exe	24a4b2c44f400a16
+4	144	7115097166155822	CMakeFiles/global_.dir/list/list.c.obj	2022fe60cf3dd23b
+145	291	7115097167542545	global_.exe	24a4b2c44f400a16

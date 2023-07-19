@@ -69,10 +69,21 @@ void StackTop(StackEntry *item, Stack *ps)
 	*item = ps->entry[ps->top-1];
 }
 
+/*
+precondition: The stack exists.
+postcondition: set the top to zero.
+*/
+
+
 void ClearStack(Stack *ps)
 {
 	ps->top =0;
 }
+
+/*
+precondition: The stack exists.
+postcondition: Display all elements of the stack.
+*/
 
 void TraverseStack(Stack *ps, void (*Disply)(StackEntry))
 {
