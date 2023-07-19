@@ -43,11 +43,5 @@ int main()
 
 	TraverseList(&l,&Display);
 
-
-
-
-
-
-
 	return 0;
 }

@@ -50,7 +50,7 @@ precondition: The list exists.
 postcondition: set the size to zero.
 */
 
-void DestroyList (List* list) // O(1) 
+void DestroyList (List* list) //O(1)
 {
 	ListNode* temp = NULL;
 	

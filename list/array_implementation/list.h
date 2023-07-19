@@ -13,24 +13,16 @@ typedef struct
 } List;
 
 
-// error state 
-
-typedef enum
-{
-	ES_NULL_POINTER = -1,
-	ES_OK
-}ES_t;
-
-ES_t CreatList   (List*);
+void CreatList   (List*);
 int  ListEmpty   (List*);
 int  ListFull    (List*);
 int  ListSize    (List*);
-ES_t DestroyList (List*);
-ES_t InsertList  (int, ListEntry , List*);
-ES_t DeleteList  (int, ListEntry*, List*);
-ES_t ReplaceList (int, ListEntry , List*);
-ES_t RetrieveList(int, ListEntry*, List* );
-ES_t TraverseList(List*, void(*pf)(ListEntry));
+void DestroyList (List*);
+void InsertList  (int, ListEntry , List*);
+void DeleteList  (int, ListEntry*, List*);
+void ReplaceList (int, ListEntry , List*);
+void RetrieveList(int, ListEntry*, List* );
+void TraverseList(List*, void(*pf)(ListEntry));
 
 
 

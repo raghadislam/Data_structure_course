@@ -27,7 +27,7 @@ int  ListEmpty   (List*);
 int  ListFull    (List*);
 int  ListSize    (List*);
 void DestroyList (List*);
-int InsertList  (int, ListEntry , List*);
+int  InsertList  (int, ListEntry , List*);
 void DeleteList  (int, ListEntry*, List*);
 void ReplaceList (int, ListEntry , List*);
 void RetrieveList(int, ListEntry*, List* );
