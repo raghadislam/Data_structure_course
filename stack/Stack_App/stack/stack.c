@@ -3,8 +3,6 @@
 #include <string.h>
 #include "stack.h"
 
-#include "../global.h"
-
 #ifdef LIMITED_MEMORY
 
 typedef struct stacknode{
@@ -45,7 +43,7 @@ int Push_Stack(void* pe, Pstack ps, int z){   // O(1)
 
 void Pop_Stack(void* pe, Pstack ps, int z) {   // O(1)
     StackNode *pn;
-    //memcpy(pe, &ps->top->entry, z);
+    memcpy(pe, &ps->top->entry, z);
     pn = ps->top;
     ps->top = ps->top->next;
     free(pn);
@@ -85,7 +83,8 @@ void TraverseStack(Pstack ps, void (*pf)(void*)){
 }
 
 
-int StackSize(Pstack ps){  // O(1)
+int StackSize(Pstack ps)
+{  // O(1)
 
 	return ps->size;
 }
@@ -100,8 +99,8 @@ void StackTop(void* p_top, Pstack ps, int z)
 
 struct stack{
 
-	int top;
-	void* items[MAX_STACK_SIZE];
+    int top;
+    void* items[MAX_STACK_SIZE];
 };
 
 
@@ -128,7 +127,7 @@ int StackFull(Pstack ps){
 
 void Pop_Stack(void* pe, Pstack ps, int z)
 {
-    memcpy(pe, &ps->items[--ps->top], z);
+    memcpy(pe, ps->items[--ps->top], z);
 }
 
 
@@ -152,7 +151,7 @@ void ClearStack(Pstack ps){
 
 void StackTop(void* p_top, Pstack ps, int z){
 
-    memcpy(p_top, ps->items[ps->top - 1], z);
+    memcpy(p_top, &ps->items[ps->top - 1], z);
 }
 
 

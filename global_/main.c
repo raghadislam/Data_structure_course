@@ -11,7 +11,7 @@ void Display(void *e)
 
 int main() {
 
-    // List
+   /* // List
 
     printf("\n<---------------List--------------->\n");
     Plist l;
@@ -81,7 +81,7 @@ int main() {
     }
     printf("\n\n");
     TraverseQueue(q, &Display);
-
+*/
     // Stack
 
     printf("\n\n<---------------Stack--------------->\n");
@@ -89,7 +89,7 @@ int main() {
     CreateStack(&st);
 
 
-    int e2;
+    int e2,top;
     for(int i = 1; i < 9; ++i)
     {
         if(!StackFull(st))
@@ -106,6 +106,9 @@ int main() {
             Pop_Stack((void*)&e2, st, sizeof(e2));
         }
     }
+    StackTop((void*)&top, st, sizeof(top));
+	printf("\n%d",top);
+
     printf("\n\n");
     TraverseStack(st, &Display);
     return 0;
