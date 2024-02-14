@@ -8,4 +8,7 @@ In the global_ folder you will find the implemetations using _**Void Pointers
 **Stack**
 
 **Queue**
+
 **List**
+
+the repo include both generic implementation using void pointers and the simple implemntations for each one of them.
