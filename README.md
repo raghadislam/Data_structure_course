@@ -7,6 +7,5 @@ In the global_ folder you will find the implemetations using _**Void Pointers
 ## Implemented Data Structures
 **Stack**
 
-**Queue
-**
+**Queue**
 **List**
